@@ -10,7 +10,7 @@ const conn = {
 let connection = mysql.createConnection(conn);
 connection.connect(); 
  
-let sql = "INSERT INTO `members` (`username`,`password`) VALUES ('test','test');";
+let sql = "INSERT INTO `members` (#우리 테이블 구조) VALUES (#우리가 써야하는 값);";
  
 connection.query(sql, function (err, results, fields) {
     if (err) {
